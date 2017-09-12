@@ -87,7 +87,7 @@ In one geth console :
 In the other console : 
 
 ```
-admin.addPeer( <the enode value from the first console> )
+> admin.addPeer( <the enode value from the first console> )
 ```
 
 
