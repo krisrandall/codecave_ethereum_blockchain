@@ -187,7 +187,7 @@ eg.
 Finally transfer 1 ether
 
 ```
-eth.sendTransaction({from: "<from account>", to: "<to account>", value: web3.toWei(1, "ether")})
+> eth.sendTransaction({from: "<from account>", to: "<to account>", value: web3.toWei(1, "ether")})
 ```
 
 
