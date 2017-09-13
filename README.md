@@ -1,4 +1,4 @@
-# Code Cave Ethereum Blockchain
+# Local Ethereum Blockchain
 
 ## Setting up your Ethereum Node(s)
 
@@ -20,15 +20,15 @@ $ mkdir <my projects folder>
 $ sudo ln -s <my projects folder> /projects
 ```
 
-### 3. Create codecave\_ethereum\_blockchain folder
+### 3. Create local\_ethereum\_blockchain folder
 
 ```
-$ mkdir /projects/codecave_ethereum_blockchain
+$ mkdir /projects/local_ethereum_blockchain
 ```
 
 ### 4. Create the genesis block config
 
-Create this file :  `/projects/codecave_ethereum_blockchain/genesis.json`
+Create this file :  `/projects/local_ethereum_blockchain/genesis.json`
 
 With the following contents : 
 
@@ -55,25 +55,25 @@ With the following contents :
 ### 5. Initialise an Ethereum node
 
 ```
-$ geth --datadir /projects/codecave_ethereum_blockchain/node1 init /projects/codecave_ethereum_blockchain/genesis.json
+$ geth --datadir /projects/local_ethereum_blockchain/node1 init /projects/local_ethereum_blockchain/genesis.json
 ```
 
 ### 6. Start that Ethereum node
 
 ```
-$ geth --datadir /projects/codecave_ethereum_blockchain/node1 --networkid 4552 console
+$ geth --datadir /projects/local_ethereum_blockchain/node1 --networkid 4552 console
 ```
 
 ### 7. Initialise another Ethereum node
 
 ```
-$ geth --datadir /projects/codecave_ethereum_blockchain/node-2 init /projects/codecave_ethereum_blockchain/genesis.json
+$ geth --datadir /projects/local_ethereum_blockchain/node-2 init /projects/local_ethereum_blockchain/genesis.json
 ```
 
 ### 8. Start the 2nd Ethereum node
 
 ```
-$ geth --datadir /projects/codecave_ethereum_blockchain/node-2 --port 30304 --nodiscover --networkid 4552 console
+$ geth --datadir /projects/local_ethereum_blockchain/node-2 --port 30304 --nodiscover --networkid 4552 console
 ```
 
 ### 9. Connect one node to the other
